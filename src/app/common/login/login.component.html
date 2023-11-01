@@ -1,0 +1,45 @@
+
+
+
+<div class="container pt-5 mt-5 d-flex justify-content-center align-items-center" style="height:700px">
+    <div class="container ">
+        <mat-card class="container mt-5 border shadow" style="width:340px">
+            <mat-card-content>
+
+                <div class="text-center" >
+                    <button class="mb-2 mt-3" mat-fab color="primary">
+                        <mat-icon class=" fw-bolder">person_outline</mat-icon>
+                    </button>
+                    <p class="fontC">Have an account?</p>
+                </div>
+
+                <form [formGroup]="loginFormGroup">
+                    <mat-form-field class="col-12 mt-2">
+                        <mat-label>Email</mat-label>
+                        <input matInput type="text" formControlName="email">
+                    </mat-form-field>
+
+                    <mat-form-field class="col-12">
+                        <mat-label>Password</mat-label>
+                        <input matInput type="password" formControlName="password">
+                        <!-- <div *ngIf="loginFormGroup.get('password').invalid && loginFormGroup.get('password').touched">
+                            <div *ngIf="loginFormGroup.get('password').errors?.['required']">Password is required</div>
+                        </div> -->
+                        <!-- <mat-hint *ngIf="loginFormGroup.get('password')?.invalid && loginFormGroup.get('password')?.touched">
+                            <span *ngIf="loginFormGroup.get('password')?.errors?.minLength">minLength</span>
+                        </mat-hint> -->
+                        
+                    </mat-form-field>
+
+                    <!-- <mat-checkbox class="" color="primary"><small>Remember me</small></mat-checkbox> -->
+                    <div class="small ">
+                        <input type="checkbox" class="checkbox-icon" checked>
+                        <span class="ms-2 align-top fontC">Remember me</span> <span class="float-end align-top fontC">Forgot
+                            Password</span>
+                    </div>
+                    <button class="container-fluid mt-4" mat-raised-button color="primary" [disabled]="loginFormGroup.invalid">Get Started</button>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
