@@ -7,6 +7,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatTabsModule} from '@angular/material/tabs';
 
 const modules = [
   MatToolbarModule,
@@ -16,6 +17,7 @@ const modules = [
   MatIconModule,
   MatInputModule,
   MatCheckboxModule,
+  MatTabsModule,
 ]
 
 @NgModule({

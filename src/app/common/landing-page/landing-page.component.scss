@@ -1,0 +1,118 @@
+// *{
+//     margin: 0;
+//     padding: 0;
+// }
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    padding: 5vh;
+}
+
+// Header paragraph
+.ph {
+    color: whitesmoke;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+.custom-shape-divider-bottom-1699440958 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1699440958 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1699440958 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.box {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+.animate__animated.animate__tada {
+    --animate-duration: 3s;
+}
+
+
+
+//   for blue-black wavy divider
+.custom-shape-divider-top-1699613240 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1699613240 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 432px;
+}
+
+.custom-shape-divider-top-1699613240 .shape-fill {
+    fill: #2F104E;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1699613240 svg {
+        width: calc(100% + 1.3px);
+        height: 170px;
+    }
+}
+
+
+// social media icons
+.fa {
+    padding: 2px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}

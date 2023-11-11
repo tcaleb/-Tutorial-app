@@ -1,45 +1,38 @@
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark  fixed-top">
+<nav class="navbar navbar-expand-sm   fixed-top" style="background-color: purple;  background-image: linear-gradient(to right, rgb(81, 4, 81), rgb(174, 32, 103));">
     <div class="container-fluid">
         
-        <!-- <a class="navbar-brand " href="#">
-            <img src="logo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
-        </a> -->
+        <a class="navbar-brand  fw-bolder border-end border-3 border-light pe-2 " style="color:whitesmoke;   font-family: Audiowide, sans-serif;" href="#">TUTORIAL 
+             APP <span class="material-icons">local_library</span></a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo" >
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-center" >
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link  text-light" href="#">Logo</a>
+                    <a class="nav-link  text-light" href="#"><span class="material-icons">local_library</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Education</a>
+                    <a class="nav-link" [routerLink]="['/content']" style="color:whitesmoke">Kid's Tutorial</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Entertainment</a>
+                    <a class="nav-link" [routerLink]="['/login']" style="color:whitesmoke" >Adult's Tutorial</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<div class="offcanvas offcanvas-start  text-bg-dark " id="demo" style="width:320px;" >
+<div class="offcanvas offcanvas-start  text-bg-light " id="demo" style="width:320px;" >
     <div class="offcanvas-header">
-        <h1 class="offcanvas-title">Heading</h1>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        <h1 class="offcanvas-title">TUTORIAL APP <span class="material-icons">local_library</span></h1>
+        <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"></button>
     </div>
     <div class="offcanvas-body">
-        <p>Some text </p>
-        <p>Education</p>
+        <p class="border-bottom border-2 ph"  [routerLink]="['/content']">Kid's Tutorial </p>
+        <p class="border-bottom border-2 ph" [routerLink]="['/login']">Adult's Tutorial</p>
         <p>Entertainment</p>
         <button class="btn btn-secondary" type="button">A Button</button>
     </div>
 </div>
 
-<!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-    Open Offcanvas Sidebar
-</button> -->
-
-<!-- d-lg-none
-id="collapsibleNavbar" -->

@@ -8,12 +8,18 @@ import { ToolbarComponent } from './common/toolbar/toolbar.component';
 import { LoginComponent } from './common/login/login.component';
 import { MaterialUiModule } from './material-ui/material-ui.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContentPageComponent } from './main/content-page/content-page.component';
+import { ContentPage2Component } from './main/content-page2/content-page2.component';
+import { LandingPageComponent } from './common/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    LoginComponent
+    LoginComponent,
+    ContentPageComponent,
+    ContentPage2Component,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,

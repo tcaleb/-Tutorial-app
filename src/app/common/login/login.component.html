@@ -37,7 +37,7 @@
                         <span class="ms-2 align-top fontC">Remember me</span> <span class="float-end align-top fontC">Forgot
                             Password</span>
                     </div>
-                    <button class="container-fluid mt-4" mat-raised-button color="primary" [disabled]="loginFormGroup.invalid">Get Started</button>
+                    <button class="container-fluid mt-4" mat-raised-button color="primary" [disabled]="loginFormGroup.invalid" (click)="login()">Get Started</button>
                 </form>
             </mat-card-content>
         </mat-card>
