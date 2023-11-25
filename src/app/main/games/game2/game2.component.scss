@@ -1,0 +1,37 @@
+.guess-the-number {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  input {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+//   Rock, Paper, Scissors
+.rock-paper-scissors {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .choices {
+    margin-top: 20px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  

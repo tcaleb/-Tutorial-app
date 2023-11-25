@@ -18,12 +18,15 @@
                 <li class="nav-item">
                     <a class="nav-link" [routerLink]="['/login']" style="color:whitesmoke" >Adult's Tutorial</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/games']" style="color:whitesmoke" >Games</a>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<div class="offcanvas offcanvas-start  text-bg-light " id="demo" style="width:320px;" >
+<div class="offcanvas offcanvas-start  text-bg-light " id="demo" style="width:320px;" data-bs-dismiss="offcanvas" >
     <div class="offcanvas-header">
         <h1 class="offcanvas-title">TUTORIAL APP <span class="material-icons">local_library</span></h1>
         <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"></button>
@@ -31,7 +34,7 @@
     <div class="offcanvas-body">
         <p class="border-bottom border-2 ph"  [routerLink]="['/content']">Kid's Tutorial </p>
         <p class="border-bottom border-2 ph" [routerLink]="['/login']">Adult's Tutorial</p>
-        <p>Entertainment</p>
+        <p class="border-bottom border-2 ph" [routerLink]="['/games']">Games</p>
         <button class="btn btn-secondary" type="button">A Button</button>
     </div>
 </div>

@@ -1,0 +1,21 @@
+<div class="container mt-5 pt-5" style="font-size: 20px; font-weight: 300;">Welcome to the captivating games feature!
+    Immerse yourself in a delightful blend of education and entertainment, engaging puzzles and challenges await both kids and adults.
+    Let the fun begin as you embark on a journey of learning and playing.
+</div>
+
+<div class="container mt-5 pt-5">
+    <h1 class="mb-4">Word Puzzle Game</h1>
+    <p id="scrambledWord" class="font-weight-bold text-primary mb-4">{{ scrambledWord }}</p>
+    <div class="row mb-3 offset-md-2">
+        <div class=" col-6 col-md-4">
+            <input type="text" class="form-control" [(ngModel)]="userInput" placeholder="Your Answer">
+        </div>
+        <div class="col-6 col-md-4">
+            <button class="btn btn-success btn-block" type="button" (click)="checkAnswer()">Submit Answer</button>
+        </div>
+    </div>
+    <p id="result" class="lead">{{ resultMessage }}</p>
+</div>
+
+<app-game2></app-game2>
+<app-game3></app-game3>

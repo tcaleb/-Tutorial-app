@@ -1,0 +1,49 @@
+.hangman {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .word {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 24px;
+  }
+  
+  .word p {
+    margin: 0 5px;
+  }
+  
+  .incorrect-guesses {
+    margin-bottom: 10px;
+  }
+  
+  .guess-input {
+    margin-top: 10px;
+  }
+  
+  label {
+    margin-right: 5px;
+  }
+  
+  input {
+    width: 40px;
+    text-align: center;
+    margin-right: 5px;
+  }
+  
+  button {
+    padding: 8px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  button[disabled] {
+    cursor: not-allowed;
+    background-color: #eee;
+  }
+  

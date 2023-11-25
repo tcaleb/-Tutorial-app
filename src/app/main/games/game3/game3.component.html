@@ -1,0 +1,19 @@
+<div class="hangman">
+    <h2>Hangman Game</h2>
+    <div class="word">
+        <p *ngFor="let letter of guessedWord">{{ letter }}</p>
+    </div>
+    <div class="incorrect-guesses">
+        <p>Incorrect Guesses: {{ incorrectGuesses.join(', ') }}</p>
+    </div>
+    <div *ngIf="gameOver">
+        <p *ngIf="gameWon">Congratulations! You guessed the word!</p>
+        <p *ngIf="!gameWon">Game Over! The word was "{{ selectedWord }}".</p>
+        <button (click)="startGame()">Play Again</button>
+    </div>
+    <div class="guess-input">
+        <label for="userGuess">Enter your guess:</label>
+        <input id="userGuess" type="text" [(ngModel)]="userGuess" [disabled]="gameOver || gameWon" />
+        <button (click)="makeGuess()">Submit Guess</button>
+    </div>
+</div>

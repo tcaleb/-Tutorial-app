@@ -116,3 +116,28 @@ h1 {
     background: #125688;
     color: white;
 }
+
+
+
+
+//flex for paragraph
+@media screen and (max-width: 2000px) {
+    .writing {
+    //    width: 50%;
+    font-size: 35px;
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+    }
+ }
+ @media screen and (max-width: 600px) {
+    .writing {
+    //    width: 100%;
+    font-size: 25px;
+    font-style: italic;
+    font-family:  "Times New Roman", Times, serif;
+    }
+ }
+
+
+
+ //style="height: 400px; text-align: center; font-size: 30px; "
