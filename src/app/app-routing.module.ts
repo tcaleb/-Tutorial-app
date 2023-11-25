@@ -10,7 +10,7 @@ import { GamesComponent } from './main/games/games.component';
 const routes: Routes = [
   {path:'', component: LandingPageComponent},
   {path:'login', component: LoginComponent},
-  {path:'content', component: ContentPageComponent, canActivate:[authGuard]},
+  {path:'content', component: ContentPageComponent},
   {path:'adults', component: ContentPage2Component, canActivate:[authGuard]},
   {path:'games', component: GamesComponent},
 ];
