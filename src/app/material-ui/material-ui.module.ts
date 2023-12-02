@@ -8,6 +8,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatStepperModule} from '@angular/material/stepper';
 
 const modules = [
   MatToolbarModule,
@@ -18,6 +19,7 @@ const modules = [
   MatInputModule,
   MatCheckboxModule,
   MatTabsModule,
+  MatStepperModule
 ]
 
 @NgModule({

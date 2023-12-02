@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./games.component.scss']
 })
 export class GamesComponent implements OnInit {
-  words: string[] = ["apple", "banana", "orange", "grape", "kiwi", "melon", "pawpaw"];
+  words: string[] = ["apple", "banana", "orange", "grape", "kiwi", "melon", "pawpaw", "coconut", "mango", "pineapple"];
   currentWord: string = "";
   scrambledWord: string = "";
   userInput: string = "";
@@ -40,5 +40,6 @@ export class GamesComponent implements OnInit {
     this.generateWord();
   }
 
+  isLinear = false;
   
 }

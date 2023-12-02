@@ -2,27 +2,28 @@
 
 <!-- Rock, Paper, Scissors -->
 <div class="rock-paper-scissors">
-    <h2>Rock, Paper, Scissors Game</h2>
-    <div class="choices">
-      <button (click)="play('rock')" type="button" class="btn btn-secondary" ><mat-icon>settings_input_svideo</mat-icon>Rock</button>
-      <button (click)="play('paper')" type="button" class="btn btn-primary"><mat-icon>note_stack</mat-icon>Paper</button>
-      <button (click)="play('scissors')" type="button" class="btn btn-danger"><mat-icon>content_cut</mat-icon>Scissors</button>
-    </div>
-    <div *ngIf="userChoice">
-      <p>Your choice: {{ userChoice }}</p>
-      <p>Computer's choice: {{ computerChoice }}</p>
-      <p style="font-weight:bolder; font-size:larger;">{{ result }}</p>
-      <button (click)="resetGame()" type="button" class="btn btn-success">Play Again</button>
-    </div>
+  <h2>Rock, Paper, Scissors Game</h2>
+  <h4>Pick One:</h4>
+  <div class="choices">
+    <button (click)="play('rock')" type="button"
+      class="btn btn-secondary"><mat-icon>settings_input_svideo</mat-icon>Rock</button>
+    <button (click)="play('paper')" type="button" class="btn btn-primary"><mat-icon>note_stack</mat-icon>Paper</button>
+    <button (click)="play('scissors')" type="button"
+      class="btn btn-danger"><mat-icon>content_cut</mat-icon>Scissors</button>
   </div>
-
-<div class="guess-the-number">
-    <h2>Guess the Number</h2>
-    <p>{{ message }}</p>
-    <input type="number" [(ngModel)]="userGuess" placeholder="Enter your guess" />
-    <button (click)="checkGuess()">Check Guess</button>
-    <button (click)="startGame()">Restart Game</button>
+  <div *ngIf="userChoice">
+    <p>Your choice: {{ userChoice }}</p>
+    <p>Computer's choice: {{ computerChoice }}</p>
+    <p style="font-weight:bolder; font-size:larger;">{{ result }}</p>
+    <button (click)="resetGame()" type="button" class="btn btn-success">Play Again</button>
+  </div>
 </div>
 
-
-  
+<!-- Guess the number -->
+<div class="guess-the-number mt-5 pt-5">
+  <h2>Guess the Number</h2>
+  <p>{{ message }}</p>
+  <input type="number" [(ngModel)]="userGuess" placeholder="Enter your guess" />
+  <button (click)="checkGuess()">Check Guess</button>
+  <button (click)="startGame()">Restart Game</button>
+</div>
