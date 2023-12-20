@@ -1,11 +1,12 @@
 <div class="container pt-5 mt-5 d-flex justify-content-center align-items-center" style="height:700px">
-    
+
     <div class="container ">
-        <div class="writing">Ready to unleash the power of learning and play? Join TUTORIAL APP now and experience a world where curiosity knows no bounds! 🚀✨</div>
+        <div class="writing">Ready to unleash the power of learning and play? Join TUTORIAL APP now and experience a
+            world where curiosity knows no bounds! 🚀✨</div>
         <mat-card class="container mt-5 border shadow" style="width:340px">
             <mat-card-content>
 
-                <div class="text-center" >
+                <div class="text-center">
                     <button class="mb-2 mt-3" mat-fab color="primary">
                         <mat-icon class=" fw-bolder">person_outline</mat-icon>
                     </button>
@@ -13,30 +14,40 @@
                 </div>
 
                 <form [formGroup]="loginFormGroup">
+
                     <mat-form-field class="col-12 mt-2">
                         <mat-label>Email</mat-label>
                         <input matInput type="text" formControlName="email">
+                        <div
+                            *ngIf="loginFormGroup.get('email')?.invalid && (loginFormGroup.get('email')?.dirty || loginFormGroup.get('email')?.touched)">
+                            <div *ngIf="loginFormGroup.get('email')?.hasError('required')" class="error-message">Email
+                                is required.</div>
+                            <div *ngIf="loginFormGroup.get('email')?.hasError('email')" class="error-message">Invalid
+                                email format.</div>
+                        </div>
                     </mat-form-field>
 
                     <mat-form-field class="col-12">
                         <mat-label>Password</mat-label>
                         <input matInput type="password" formControlName="password">
-                        <!-- <div *ngIf="loginFormGroup.get('password').invalid && loginFormGroup.get('password').touched">
-                            <div *ngIf="loginFormGroup.get('password').errors?.['required']">Password is required</div>
-                        </div> -->
-                        <!-- <mat-hint *ngIf="loginFormGroup.get('password')?.invalid && loginFormGroup.get('password')?.touched">
-                            <span *ngIf="loginFormGroup.get('password')?.errors?.minLength">minLength</span>
-                        </mat-hint> -->
-                        
+                        <div
+                            *ngIf="loginFormGroup.get('password')?.invalid && (loginFormGroup.get('password')?.dirty || loginFormGroup.get('password')?.touched)">
+                            <div *ngIf="loginFormGroup.get('password')?.hasError('required')" class="error-message">
+                                Password is required.</div>
+                            <div *ngIf="loginFormGroup.get('password')?.hasError('minlength')" class="error-message">
+                                Password must be at least 6 characters long.</div>
+                        </div>
                     </mat-form-field>
 
-        
+
                     <div class="small ">
                         <input type="checkbox" class="checkbox-icon" checked>
-                        <span class="ms-2 align-top fontC">Remember me</span> <span class="float-end align-top fontC">Forgot
+                        <span class="ms-2 align-top fontC">Remember me</span> <span
+                            class="float-end align-top fontC">Forgot
                             Password</span>
                     </div>
-                    <button class="container-fluid mt-4" mat-raised-button color="primary" [disabled]="loginFormGroup.invalid" (click)="login()">Get Started</button>
+                    <button class="container-fluid mt-4" mat-raised-button color="primary"
+                        [disabled]="loginFormGroup.invalid" (click)="login()">Get Started</button>
                 </form>
             </mat-card-content>
         </mat-card>
